@@ -6,7 +6,8 @@ Feature: Validation of Recent Lawsuits
  When I fetch Plaintiff and Defendant information from Recent lawsuits as per "<RecentDate>"
  Then I should verify following details are present with "<Detail1>"  "<Detail2>" "<Detail3>" "<Detail4>"
  And I closed browser 
- Then Verify Page Header "HomePage"
+ Then Verify Page Header "HomePage"\
+ And User verifies singin
   
   Examples:
   |url|RecentDate|Detail1|Detail2|Detail3|Detail4|
