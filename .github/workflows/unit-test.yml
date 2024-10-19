@@ -1,20 +1,20 @@
-name: unit-test
-
-on:
-  push:
-    branches:
-      - main
-      - 'releases/**'
-
-  pull_request:
-    types: [opened, synchronize]
-
-  issues:
-    types:
-      - opened
-      - labeled
-
-  workflow_dispatch:
+name: Sprint-test
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#      - 'releases/**'
+#
+#  pull_request:
+#    types: [opened, synchronize]
+#
+#  issues:
+#    types:
+#      - opened
+#      - labeled
+#
+#  workflow_dispatch:
 
 jobs:
   build:
